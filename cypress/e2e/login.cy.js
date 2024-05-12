@@ -58,7 +58,7 @@ describe('Автотесты для формы логина и пароля', fu
         cy.get('#pass').type('iLoveqastudio1');
         cy.get('#loginButton').click();
         cy.get('#messageHeader').should('be.visible');
-        cy.get('#messageHeader').contains('Такого логина или пароля нет');
+        cy.get('#messageHeader').contains('Авторизация прошла успешно');
         cy.get('#exitMessageButton > .exitIcon').should('be.visible');
     })
     
